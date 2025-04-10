@@ -129,9 +129,10 @@ function App() {
               transition={{
                 stiffness:100,
                 type:'spring',
-                delay: 0.1*i
+                delay: 0.1*i,
+                duration:.5
               }}
-             className='p-4 bg-black/15  rounded-xl md:p-6 '>
+             className='p-4 bg-black/15 dark:bg-white  rounded-xl md:p-6 '>
                 <h6 className='capitalize text-lg font-semibold  md:text-2xl'>{ele.title}</h6>
                 <h4 className='text-gray-100 dark:text-gray-600 transition-all duration-500  md:text-lg '>{ele.value}</h4>
                 <div className=' flex items-center justify-end text-5xl text-gray-100 dark:text-gray-700  transition-all duration-500 md:text-7xl '>{ele.icon}</div>
