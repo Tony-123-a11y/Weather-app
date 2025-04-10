@@ -80,7 +80,7 @@ function App() {
   const inputRef=useRef()
   return (
     <>
-    <div className={`min-h-screen relative  bg-gradient-to-b from-[rgb(52,69,121)]  ${(dark && 'dark')} via-gray-300 to-purple-200`}>
+    <div className={`min-h-screen relative  bg-gradient-to-b from-sky-100 to-sky-50 ${(dark && 'dark')}`}>
       <div style={{opacity: (dark && 0) }} className={`absolute w-full h-full bg-[rgb(52,69,121)] transition duration-500`}></div>
       <div className='container px-3 py-8 font-[inter]  transition-all relative z-10 duration-500 text-white dark:text-black min-h-screen flex flex-col items-center justify-center mx-auto xl:max-w-7xl'>
         {loader ? <span className='loader'></span> : 
